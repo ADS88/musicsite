@@ -1,0 +1,58 @@
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+#blond-text{
+    color: #FAA39A;
+}
+
+#channel-orange-text{
+    color: #FF7302;
+}
+
+#endless-text{
+    color: #BDBDBD;
+}
+
+body{
+    background-color: #57595D;
+}
+
+ul{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+}
+
+.album-container{
+    float: left;
+    width: 32%;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.album-container:hover{
+    animation-name: scale-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row{
+    margin: 0 auto;
+  }
+
+@keyframes scale-up {
+    100%{
+        transform: scale(1.05);
+    }
+}
