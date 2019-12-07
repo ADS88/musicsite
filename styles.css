@@ -27,11 +27,19 @@ ul{
     list-style-type: none;
 }
 
+@media (min-width: 900px){
+    .row{
+        display: flex;
+    }
+}
+
+.row{
+    flex-wrap: wrap;
+}
+
 .album-container{
-    float: left;
-    width: 32%;
-    padding: 5px;
-    margin-top: 30px;
+    flex: 1;
+    margin-top: 10px;
 }
 
 .album-container:hover{
@@ -40,16 +48,6 @@ ul{
     animation-fill-mode: forwards;
 
 }
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .row{
-    margin: 0 auto;
-  }
 
 @keyframes scale-up {
     100%{
