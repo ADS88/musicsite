@@ -2,7 +2,7 @@ h2{
     color: white;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
+    font-size: 20px;
 }
 
 #blond-text{
@@ -19,27 +19,71 @@ h2{
 
 body{
     background-color: #57595D;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+a{
+    color: #221E22;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover{
+    animation-name: change-pink;;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+img{
+    padding: 0px;
+    margin: 0px;
 }
 
 ul{
     color: white;
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
+    font-size: 14px;
 }
 
-@media (min-width: 900px){
-    .row{
-        display: flex;
-    }
+p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#pinkline{
+    height: 10px;
+    width: 100%;
+    background-color: #FAA39A;
+}
+
+.text-container{
+    display: flex;
+    margin-right: 125px;
+    margin-left: 125px;;
 }
 
 .row{
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 125px 0 125px;
+    display: flex;
 }
 
 .album-container{
-    flex: 1;
+    flex-basis: 20%;
     margin-top: 10px;
+    align-content: center;
 }
 
 .album-container:hover{
@@ -49,8 +93,24 @@ ul{
 
 }
 
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h6{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
 @keyframes scale-up {
     100%{
         transform: scale(1.05);
+    }
+}
+
+@keyframes change-pink {
+    100%{
+        color: #FAA39A;
     }
 }
